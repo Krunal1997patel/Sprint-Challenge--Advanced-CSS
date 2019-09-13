@@ -1,1 +1,43 @@
 // Navigation code here
+
+.background{
+
+    .navHover();
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        padding: 1% 0;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        
+        // ******************** TITLE OF PAGE
+        h1{
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+    
+        // ******************** NAV OF PAGE
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 20%;
+
+            @media @phone{
+                margin: 0 10%;
+            }
+    
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.6rem;
+
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+    }
+}
